@@ -1,0 +1,11 @@
+---
+whiskers:
+  version: ^2.5.1
+  matrix:
+    - flavor
+  filename: "themes/{{ flavor.identifier }}.config"
+---
+[options]
+background={{ base.hex }}
+overlay_text_color={{ text.hex }}
+overlay_background_color={{ crust.hex }}
